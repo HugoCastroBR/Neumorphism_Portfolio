@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../font/SegoeUI.ttf);
+}
+
+body {
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.TextBasic {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.NeoP__Header_container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NeoP__Header_item01 a, .NeoP__Header_item02 a {
+  color: #0F528B;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Main_Page {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: #2db0c6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2db0c6), to(#0f528b));
+  background: linear-gradient(180deg, #2db0c6 0%, #0f528b 100%);
+}
+
+.NeoP__Main_Page__Home_container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NeoP__Main_Page__Section_body {
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+
+.NeoP__Main_Page__Section_footer {
+  width: 100vw;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NeoP__Main_Page__Section_Button_pattern {
+  width: 250px;
+  height: 70px;
+  border-radius: 35px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  color: white;
+  background: #e0e0e0;
+  -webkit-box-shadow: inset 10px 10px 20px #bebebe, inset -10px -10px 20px #ffffff;
+          box-shadow: inset 10px 10px 20px #bebebe, inset -10px -10px 20px #ffffff;
+}
+/*# sourceMappingURL=index.css.map */
