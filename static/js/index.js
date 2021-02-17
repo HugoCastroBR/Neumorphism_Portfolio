@@ -36,7 +36,33 @@ function ChangeButton_Active(){
             }
         })
     })
+    
+}
+function HomeAnimation(){
+    let text = "Developer"
+    let Original_text = text
+    const Change = document.querySelector(".NeoP__Main_Page__Home__Title_02")
+    let time = 200
+    let total_time = 600 + (200 * text.length)
+    text = text.split("")
+    Change.innerHTML = ""
+
+    setTimeout(()=>{
+        Change.innerHTML = Original_text
+    },total_time)
+
+    text.forEach(element => {
+        setTimeout(()=>{
+            Change.innerHTML = Change.innerHTML.replace('_',"")
+            Change.innerHTML += `${element}_`
+        },time)
+        time += 200
+        
+    })
 }
 
+
+
+HomeAnimation()
 ChangeButton_Active()
 ChangeA_Active()
