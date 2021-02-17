@@ -1,113 +1,14 @@
-function ChangePageTitle(new_title){
-
-    document.title = `${new_title} | HugoCastro`
-}
-
-
-function RefreshButton(){
-    const A_selected_class = "Neop__Header__a_selected"
-    const Buttons = document.querySelectorAll(".Neop__Header__a")
-
-    Buttons.forEach(element => {
-        element.classList.remove(A_selected_class)
-    })
-}
-
-
-function ChangeA_Active(){
-    const A_selected_class = "Neop__Header__a_selected"
-    const Buttons = document.querySelectorAll(".Neop__Header__a")
-    let Selected = ""
-    Buttons.forEach((element) =>{
-        element.addEventListener("click",function(element){
-            element.preventDefault()
-            Selected = element.path[0].id
-            RefreshButton()
-            document.querySelector(`#${Selected}`).classList.add(A_selected_class)
-            ChangePageTitle(document.querySelector(`#${Selected}`).innerHTML)
-
-        })
-    })
-}
-
-function ChangeButton_Active(){
-    const A_selected_class = "Neop__Header__a_selected"
-    document.querySelectorAll(".NeoP__Main_Page__Section_Button_pattern").forEach(element=>{
-        element.addEventListener("click",element => {
-            try{ 
-                let Selected = ((element.path[0].id.split("-")[1]).toLowerCase())
-                RefreshButton()
-                document.querySelector(`#a_link_${Selected}`).classList.add(A_selected_class)
-                ChangePageTitle(document.querySelector(`#a_link_${Selected}`).innerHTML)
-            }
-            catch{
-                // ignore
-            }
-        })
-    })
-    
-}
-function HomeAnimation(){
-    let text = "Developer"
-    let Original_text = text
-    const Change = document.querySelector(".NeoP__Main_Page__Home__Title_02")
-    let time = 200
-    let total_time = 600 + (200 * text.length)
-    text = text.split("")
-    Change.innerHTML = ""
-
-    setTimeout(()=>{
-        Change.innerHTML = Original_text
-    },total_time)
-
-    text.forEach(element => {
-        setTimeout(()=>{
-            Change.innerHTML = Change.innerHTML.replace('_',"")
-            Change.innerHTML += `${element}_`
-        },time)
-        time += 200
-        
-    })
-}
-
-
-function ChangeInner(target,string){
-    target.innerHTML = string
-}
-
-function languageSet(){
-    let userLang = navigator.language || navigator.userLanguage
-    // const buttons_text_header = {
-    //     'home':document.querySelector("#a_link_home"),
-    //     'works':document.querySelector("#a_link_works"),
-    //     'about':document.querySelector("#a_link_about"),
-    //     'contact':document.querySelector("#a_link_contact")
-    // }
-    // const buttons_text_section = {
-    //     'home':document.querySelector("#Linked_at_-Home"),
-    //     'works':document.querySelector("#Linked_at_-Works"),
-    //     'about':document.querySelector("#Linked_at_-About"),
-    //     'contact':document.querySelector("#Linked_at_-Contact")
-    // }
-    // const text = document.querySelector("")
-
-    // if(userLang.toLowerCase() == 'pt-br' || userLang.toLowerCase() == 'pt-pt'){
-    //     const button_translate = [buttons_text_header,buttons_text_section]
-    //     button_translate.forEach(element=>{
-    //         ChangeInner(element['home'],"Inicio")
-    //         ChangeInner(element['works'],"Trabalhos")
-    //         ChangeInner(element['about'],"Sobre")
-    //         ChangeInner(element['contact'],"Contato")
-    //     })
-    // }
-
-
-    if(userLang.toLowerCase() == 'pt-br' || userLang.toLowerCase() == 'pt-pt'){
-
-    }else{
-        const html_en = `
-        
-        <header class="NeoP__Header_container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | HugoCastro</title>
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/index/index.css">
+</head>
+<body id="pt-body">
+    <header class="NeoP__Header_container">
         <div class="NeoP__Header_item01">
             <a onclick="window.location.href='#home'" class="TextBasic Neop__Header__a Neop__Header__a_selected" id="a_link_home"> Home</a>
         </div>
@@ -223,21 +124,7 @@ function languageSet(){
         </section>
 
     </main>
-        
-        
-        
-        
-        `
+</body>
 
-        document.querySelector('body').innerHTML = html_en
-        document.querySelector("html").lang = "en"
-    }
-}
-
-
-languageSet()
-
-
-HomeAnimation()
-ChangeButton_Active()
-ChangeA_Active()
+<script src="../../static/js/index.js"></script>
+</html>

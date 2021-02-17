@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | HugoCastro</title>
+    <title>HugoCastro</title>
     <link rel="stylesheet" href="../../static/css/reset.css">
     <link rel="stylesheet" href="../../static/css/index/index.css">
 </head>
-<body>
+<body id="pt-body">
     <header class="NeoP__Header_container">
         <div class="NeoP__Header_item01">
-            <a onclick="window.location.href='#home'" class="TextBasic Neop__Header__a Neop__Header__a_selected" id="a_link_home"> Home</a>
+            <a onclick="window.location.href='#home'" class="TextBasic Neop__Header__a Neop__Header__a_selected" id="a_link_home">Inicio </a>
         </div>
         <div class="NeoP__Header_item02">
-            <a onclick="window.location.href='#works'" class="TextBasic Neop__Header__a" id="a_link_works">Works</a>
-            <a onclick="window.location.href='#about'"class="TextBasic Neop__Header__a" id="a_link_about">About</a>
-            <a onclick="window.location.href='#contact'" class="TextBasic Neop__Header__a" id="a_link_contact">Contact</a>
+            <a onclick="window.location.href='#works'" class="TextBasic Neop__Header__a" id="a_link_works">Trabalhos</a>
+            <a onclick="window.location.href='#about'"class="TextBasic Neop__Header__a" id="a_link_about">Sobre</a>
+            <a onclick="window.location.href='#contact'" class="TextBasic Neop__Header__a" id="a_link_contact">Contato</a>
         </div>
         
     </header>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="NeoP__Main_Page__Section_footer">
-                <button onclick="window.location.href='#works'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_$Works" >Works</button>
+                <button onclick="window.location.href='#works'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_-Works" >Trabalhos</button>
             </div>
         </section>
 
@@ -46,7 +46,7 @@
                             <span class="NeoP__Main_Page__Works__card_Desc__span TextBasic">Criação de Site, ainda em progresso, site com foco em divulgação ufologica e relacionados. Usando diversas tecnologias tais como: JavaScript, Html5, Css3, Sass, Python, Flask, PostgreSQL.</span>
                         </div>
                         <div class="NeoP__Main_Page__Works__card_Button_container">
-                            <button class="TextBasic NeoP__Main_Page__Section_Button_pattern">Acess</button>
+                            <button class="TextBasic NeoP__Main_Page__Section_Button_pattern">Visitar</button>
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                             <span class="NeoP__Main_Page__Works__card_Desc__span TextBasic">Badge Generator é meu primeiro projeto publicado no pip, utilizando apenas python, ele cria Badges pela plataforma shilds.io, podendo ser utilizado de diversas formas, seja em integração a scripts complexos ou direto no terminal. </span>
                         </div>
                         <div class="NeoP__Main_Page__Works__card_Button_container">
-                            <button class="TextBasic NeoP__Main_Page__Section_Button_pattern">Acess</button>
+                            <button class="TextBasic NeoP__Main_Page__Section_Button_pattern">Visitar</button>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="NeoP__Main_Page__Section_footer">
-                <button onclick="window.location.href='#about'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_$About">About</button>
+                <button onclick="window.location.href='#about'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_-About">Sobre</button>
             </div>
         </section>
         <section class="NeoP__Main_Page__Home_container" id="about">
@@ -78,7 +78,7 @@
                 <div class="NeoP__Main_Page__about__container">
 
                     <div class="NeoP__Main_Page__about__Image_container">
-                        <img class="NeoP__Main_Page__about__Image_img" src="../../../../../Downloads/MyFlow/IMG_20210211_095618.jpg" alt="">
+                        <img class="NeoP__Main_Page__about__Image_img" src="../../static/img/Me.jpg" alt="">
                         <span class="NeoP__Main_Page__about__Image_span TextBasic" >Hugo Castro</span>
                         <span class="NeoP__Main_Page__about__Image_span TextBasic" >21/03/2003</span>
                     </div>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="NeoP__Main_Page__Section_footer">
-                <button onclick="window.location.href='#contact'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_$Contact">Contact</button>
+                <button onclick="window.location.href='#contact'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_-Contact">Contato</button>
             </div>
         </section>
         <section class="NeoP__Main_Page__Home_container" id="contact">
@@ -112,18 +112,19 @@
                         </div>
 
                         <span class="TextBasic">or mail me:</span>
-                        <a class="TextBasic">hugoecastro2008@hotmail.com</a>
-                        <button class="TextBasic NeoP__Main_Page__Section_Button_pattern">Hire me</button>
+                        <a href="mailto:hugocastrohc@outlook.com" class="TextBasic">hugocastrohc@outlook.com</a>
+                        <button onclick='window.location.href="mailto:hugocastrohc@outlook.com?subject=Oferta de trabalho" ' class="TextBasic NeoP__Main_Page__Section_Button_pattern">Me contrate</button>
 
                     </div>
             </div>
             </div>
             <div class="NeoP__Main_Page__Section_footer">
-                <button onclick="window.location.href='#home'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_$Home">Home</button>
+                <button onclick="window.location.href='#home'" class="TextBasic NeoP__Main_Page__Section_Button_pattern" id="Linked_at_-Home">Inicio</button>
             </div>
         </section>
 
     </main>
 </body>
+
 <script src="../../static/js/index.js"></script>
 </html>
