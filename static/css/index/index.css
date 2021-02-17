@@ -61,6 +61,7 @@ body {
   font-size: 35px;
   margin-left: 15px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .Neop__Header__a {
@@ -242,12 +243,22 @@ body {
   margin-bottom: 1.25px;
   -webkit-box-shadow: inset 10px 8px 15px #23899a, inset -10px -8px 15px #37d7f2;
           box-shadow: inset 10px 8px 15px #23899a, inset -10px -8px 15px #37d7f2;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .NeoP__Main_Page__Works__card__image {
-  width: 300px;
-  -webkit-box-shadow: inset 10px 8px 15px black, inset -10px -8px 15px white;
-          box-shadow: inset 10px 8px 15px black, inset -10px -8px 15px white;
+  height: 168px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .NeoP__Main_Page__Works__card_Desc_container {
@@ -387,10 +398,11 @@ body {
           align-items: center;
 }
 
-.NeoP__Main_Page__contact__container span {
+.NeoP__Main_Page__contact__container span, a {
   color: white;
   font-size: 25px;
   margin-top: 5px;
+  text-decoration: none;
 }
 
 .NeoP__Main_Page__contact__container .NeoP__Main_Page__Section_Button_pattern {
@@ -448,5 +460,90 @@ body {
   margin-right: 10px;
   cursor: pointer;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .NeoP__Main_Page__Home__MyName {
+    font-size: 100px;
+  }
+  .NeoP__Main_Page__Home__Title_container {
+    margin-left: 270px;
+  }
+  .NeoP__Main_Page__Home__Title_01, .NeoP__Main_Page__Home__Title_02 {
+    font-size: 39px;
+  }
+  .NeoP__Main_Page__about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NeoP__Main_Page__about__desc_container {
+    width: 90vw;
+  }
+  .NeoP__Main_Page__about__desc_span_desc {
+    height: 30vh;
+    font-size: 18px;
+    width: 90vw;
+  }
+  .NeoP__Main_Page__about__Image_container {
+    max-height: 25vh;
+    max-width: 100vw;
+    width: 100%;
+    margin: 2.5vh;
+  }
+  .NeoP__Main_Page__about__Image_img {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NeoP__Header_container {
+    height: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .NeoP__Header_item01 a, .NeoP__Header_item02 {
+    font-size: 20px;
+  }
+  .Neop__Header__a {
+    font-size: 20px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .NeoP__Main_Page__Home__MyName {
+    font-size: 50px;
+  }
+  .NeoP__Main_Page__Home__Title_container {
+    margin-left: 135px;
+  }
+  .NeoP__Main_Page__Home__Title_01, .NeoP__Main_Page__Home__Title_02 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Neop__Header__a {
+    font-size: 15px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+  .NeoP__Main_Page__Home__MyName {
+    font-size: 30px;
+  }
+  .NeoP__Main_Page__Home__Title_container {
+    margin-left: 70px;
+  }
+  .NeoP__Main_Page__Home__Title_01, .NeoP__Main_Page__Home__Title_02 {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
