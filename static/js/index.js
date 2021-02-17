@@ -51,8 +51,10 @@ function HomeAnimation(){
     let text = "Developer"
     let Original_text = text
     const Change = document.querySelector(".NeoP__Main_Page__Home__Title_02")
-    let time = 200
-    let total_time = 600 + (200 * text.length)
+    
+    let time = 350
+    let time_add = time
+    let total_time = 600 + (time* text.length)
     text = text.split("")
     Change.innerHTML = ""
 
@@ -65,7 +67,7 @@ function HomeAnimation(){
             Change.innerHTML = Change.innerHTML.replace('_',"")
             Change.innerHTML += `${element}_`
         },time)
-        time += 200
+        time += time_add
         
     })
 }
